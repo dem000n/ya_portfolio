@@ -74,11 +74,11 @@ body {
 }
 
 .project_music-album {
-    background-image: url(https://code.s3.yandex.net/web-code/album.png);
+    background-image: url(./images/album.png);
 }
 
 .project_design-principles {
-    background-image: url(https://code.s3.yandex.net/web-code/design.png);
+    background-image: url(./images/design.png);
 }
 
 .project-video {
@@ -100,13 +100,13 @@ body {
 .project_slider {
     width: 306px;
     height: 290px;
-    background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
+    background-image: url(./images/slider.gif);
 }
 
 .project_reactive {
     width: 306px;
     height: 290px;
-    background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
+    background-image: url(./images/reactive.gif);
 }
 
 .project_vanilla {
@@ -115,18 +115,18 @@ body {
 }
 
 .project_how-to-study {
-    background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
+    background-image: url(./images/how-to-study.png);
     order: 3;
 }
 
 .project_across-russia {
-    background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
+    background-image: url(./images/across-russia.png);
     flex-basis: 636px;
     order: 2;
 }
 
 .project_mesto {
-    background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
+    background-image: url(./images/mesto.png);
     order: 1;
 }
 
@@ -142,7 +142,7 @@ body {
 .logo {
     width: 145px;
     height: 25px;
-    background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+    background-image: url(./images/logo_black.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
