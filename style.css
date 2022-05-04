@@ -66,6 +66,11 @@ body {
 .project {
     background-position: center;
     background-size: cover;
+    transition: opacity 0.3s linear;
+}
+
+.project:hover {
+    opacity: 80%;
 }
 
 .project_beginner {
@@ -112,7 +117,10 @@ body {
 .project_vanilla {
     width: 306px;
     height: 290px;
+    
 }
+
+
 
 .project_how-to-study {
     background-image: url(./images/how-to-study.png);
