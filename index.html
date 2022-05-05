@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Портфолио</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио Дмитрий Т на Яндекс Практикуме">
+  <meta name="keywords" content="html, css, javascript">
+  <meta name="author" content="Дмитрий">
 </head>
-
-<body>
-    <div class="header">
-        <a class="header-link" href=#>Яндекс Практикум</a>
-    </div>
-    <div class="menu">
-        <a class="menu-link" href=#>Первые шаги в HTML и CSS</a>
-        <a class="menu-link" href=#>Библиотеки JavaScript</a>
-        <a class="menu-link" href=#>Практика HTML, CSS и JavaScript</a>
-    </div>
-    <div class="main">
-        <div class="flex-row">
-            <a class="project project_beginner project_music-album" href="http://185.172.131.147:8080/hosting/the-life-of-coder/"></a>
-            <a class="project project_beginner project_design-principles" href="http://185.172.131.147:8080/hosting/four-rules/"></a>
-        </div>
-        <div class="flex-row flex-row_reversed">
-            <div class="flex-column flex-column_reversed">
-                <div class="project project_frameworks project_p5">
-                    <video class="project-video" src="./images/like.mp4" autoplay muted
-                        loop></video>
-                </div>
-                <div class="flex-row flex-row_frameworks-inner">
-                    <div class="project project_frameworks project_slider"></div>
-                    <div class="project project_frameworks project_reactive"></div>
-                </div>
-            </div>
-            <a class="project project_frameworks project_procrastinate" href="http://185.172.131.147:8080/hosting/procrastinate/">
-                <video class="project-video" src="./images/procrastinate.mov" autoplay muted
-                    loop></video>
+<body class="page">
+  <nav class="menu centered-block page__menu">
+    <a href="#beginner" class="menu__link menu__link_active">Первые шаги в HTML и CSS</a>
+    <a href="#frameworks" class="menu__link">Библиотеки JavaScript</a>
+    <a href="#practice" class="menu__link">Практика HTML, CSS и JavaScript</a>
+  </nav>
+  <main class="content centered-block">
+    <section id="beginner">
+      <h2 class="content__title">Первые шаги в HTML и CSS</h2>
+      <ul class="flex-row list flex-row_space_bottom">
+        <li class="project project_name_music-album project_width_l project_height_l">
+          <a href="http://185.172.131.147:8080/hosting/the-life-of-coder/" class="project__overlay">Обложка музыкального альбома</a>
+        </li>
+        <li class="project project_name_design-principles project_width_l project_height_l">
+          <a href="http://185.172.131.147:8080/hosting/four-rules/" class="project__overlay">Посадочная страница</a>
+        </li>
+      </ul>
+    </section>
+    <section id="frameworks">
+      <h2 class="content__title">Библиотеки JavaScript</h2>
+      <div class="flex-row flex-row_reversed flex-row_space_bottom">
+        <div class="flex-column flex-column_reversed">
+          <div class="project project_width_l project_height_s">
+            <a class="video-container" href="http://185.172.131.147:8080/hosting/like/">
+            <video class="project__video" src="./images/like.mp4" autoplay muted loop></video>
+            <div class="video-overlay">Like</div>
             </a>
+          </div>
+          <ul class="flex-row list">
+            <li class="project project_name_slider project_width_m project_height_m">
+              <div class="project_und-const"><a href="#" class="project__overlay project__overlay_disabled">Слайдер</a></div>
+            </li>
+            <li class="project project_name_reactive project_width_m project_height_m">
+              <div class="project_und-const"><a href="#" class="project__overlay project__overlay_disabled">React, Vue, Angular</a></div>
+            </li>
+          </ul>
         </div>
-        <div class="flex-row">
-            <a class="project project_vanilla project_how-to-study" href="http://185.172.131.147:8080/hosting/how-to-learn_extended/"></a>
-            <a class="project project_vanilla project_across-russia"></a>
-            <a class="project project_vanilla project_mesto"></a>
+        <div class="project project_width_l project_height_xl">
+            <a class="video-container" href="http://185.172.131.147:8080/hosting/procrastinate/">
+              <video class="project__video" src="./images/procrastinate.mov" autoplay muted loop></video>
+              <div class="video-overlay">Чем заняться?</div>
+            </a>
+            
         </div>
-    </div>
-
-    <div class="footer">
-        <div class="logo">
-
-        </div>
-    </div>
+      </div>
+    </section>
+    <section id="practice">
+      <h2 class="content__title">Практика HTML, CSS и JavaScript</h2>
+      <ul class="flex-row list">
+        <li class="project project_name_how-to-study project_width_m project_height_m">
+          <a href="http://185.172.131.147:8080/hosting/how-to-learn_extended/" class="project__overlay">CSS-анимации</a>
+        </li>
+        <li class="project project_name_across-russia project_width_l project_height_m">
+          <div class="project_und-const"><a href="#" class="project__overlay project__overlay_disabled">Адаптивная вёрстка</a></div>
+        </li>
+        <li class="project project_name_mesto project_width_m project_height_m">
+          <div class="project_und-const"><a href="#" class="project__overlay project__overlay_disabled">Приложение на JavaScript</a></div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer centered-block">
+    <div class="footer__logo"></div>
+  </footer>
 </body>
-
 </html>
